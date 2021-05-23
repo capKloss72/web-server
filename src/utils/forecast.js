@@ -13,7 +13,8 @@ const forecast = ({ Latitude, Longitude }, callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees and it feels like ${body.current.feelslike} degrees`
+        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees and it feels like ${body.current.feelslike} degrees.
+        Wind speed is ${body.current.wind_speed} with wind direction of ${body.current.wind_dir}`
       );
     }
   });
