@@ -1,4 +1,4 @@
-// Main louncher for the express web-server
+// Main launcher for the express web-server
 
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
